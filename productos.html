@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | RespiraMax</title>
+  <meta name="description" content="Compra parches nasales, cintas bucales y Packs Combo RespiraMax. Packs de 30 y 60 unidades con pago seguro en Mercado Pago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__fila">
+      <a class="marca" href="index.html">Respira<span>Max</span></a>
+      <button class="menu-boton" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" aria-current="page">Productos</a>
+        <a href="index.html#como-se-usa">Cómo se usa</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="btn btn--primario" href="#catalogo">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Nuestros <span>productos</span></h1>
+        <p>Packs de 30 y 60 unidades. Una unidad por noche.</p>
+      </div>
+    </section>
+
+    <section class="seccion" id="catalogo">
+      <div class="contenedor">
+        <h2 class="seccion__titulo" style="margin-bottom:28px">¿Cómo <em>comprar</em>?</h2>
+        <div class="compra-pasos">
+          <div class="compra-paso"><span>1</span><strong>Elige tu pack</strong>Revisa los productos y elige el que más te acomode.</div>
+          <div class="compra-paso"><span>2</span><strong>Paga con Mercado Pago</strong>Toca "Pagar con Mercado Pago" y paga el monto de tu pack.</div>
+          <div class="compra-paso"><span>3</span><strong>Envíanos tus datos</strong>Mándanos por WhatsApp el comprobante, tu nombre y dirección.</div>
+          <div class="compra-paso"><span>4</span><strong>Recibe en casa</strong>Despachamos a todo Chile por Chilexpress. Envío gratis desde $38.000.</div>
+        </div>
+
+        <div class="filtros" role="group" aria-label="Filtrar productos">
+          <button class="filtro" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="filtro" data-filtro="combo" aria-pressed="false">Packs Combo</button>
+          <button class="filtro" data-filtro="bucal" aria-pressed="false">Cinta bucal</button>
+          <button class="filtro" data-filtro="nasal" aria-pressed="false">Parche nasal</button>
+        </div>
+
+        <!-- Las tarjetas se generan desde js/productos.js -->
+        <div class="productos" data-productos="todos"></div>
+
+        <div class="aviso">
+          <strong>Importante:</strong> RespiraMax no es un tratamiento médico. Si tienes apnea del sueño, congestión nasal crónica
+          o algún problema respiratorio, consulta a un médico antes de usarlo. La cinta bucal no debe usarse en niños.
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--alt">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">¿Cuál <em>elegir</em>?</h2>
+        <div class="usos" style="margin-top:40px">
+          <div class="uso">
+            <h3>Parche nasal</h3>
+            <p>Para quienes sienten la nariz cerrada al dormir o quieren más aire al entrenar.</p>
+          </div>
+          <div class="uso">
+            <h3>Cinta bucal</h3>
+            <p>Para quienes duermen con la boca abierta, roncan o despiertan con la boca seca.</p>
+          </div>
+          <div class="uso">
+            <h3>Pack Combo</h3>
+            <p>Lo mejor de ambos: nariz abierta y boca cerrada. Además ahorras $3.000.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__grid">
+        <div>
+          <a class="marca" href="index.html">Respira<span>Max</span></a>
+          <p style="margin-top:8px">Respira mejor. Duerme mejor.</p>
+        </div>
+        <div>
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="index.html#como-se-usa">Cómo se usa</a></li>
+            <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html#envios">Envíos</a></li>
+            <li><a href="contacto.html#devoluciones">Cambios y devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Escríbenos</h4>
+          <ul>
+            <li><a href="https://wa.me/56957056158" data-whatsapp>WhatsApp +56 9 5705 6158</a></li>
+            <li><a href="mailto:clemente.yanez.doren@gmail.com">Correo</a></li>
+            <li>Instagram: próximamente</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie__legal">© <span id="anio">2026</span> RespiraMax · Chile · Precios en pesos chilenos (CLP).</p>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
